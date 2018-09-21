@@ -1,11 +1,8 @@
 all:
 	gcc -std=c99 -g3 huff.c -o huff
 
-test1:
-	./huff big.txt
-
-test2:
-	./huff huff.c
+test:
+	./huff data/big.txt >> out
 
 clean:
 	rm -rf *~ huff
